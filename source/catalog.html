@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>КОТЕЙКА - отель для кошек</title>
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="header__top">
+      <a class="header__logo logo">
+        <img src="img/logo.svg" width="46" height="38" alt="Логотип сайта КОТЕЙКА.">
+      </a>
+      <button class="header__button">
+        <span class="visually-hidden">Открыть меню.</span>
+      </button>
+    </div>
+    <nav class="header__nav nav">
+      <ul class="nav__list">
+        <li><a href="#advantages" class="nav__link">Почему мы?</a></li>
+        <li><a href="#rooms" class="nav__link">Номера</a></li>
+        <li><a href="#reviews" class="nav__link">Отзывы</a></li>
+        <li><a href="#contacts" class="nav__link">Контакты</a></li>
+      </ul>
+    </nav>
+    <div class="header__contacts">
+      <a href="tel:+8(800)333-55-99" class="header__contacts-phohe">8 (800) 333-55-99</a>
+      <ul class="social">
+        <li>
+          <a href="" class="social__link">
+            <span class="visually-hidden">Мы на фейсбук.</span>
+          </a>
+        </li>
+        <li>
+          <a href="" class="social__link">
+            <span class="visually-hidden">Мы в инстаграм.</span>
+          </a>
+        </li>
+        <li>
+          <a href="" class="social__link">
+            <span class="visually-hidden">Мы во вконтакте.</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </header>
+
+  <main class="catalog">
+    <h1 class="catalog__title">Наши номера</h1>
+
+    <div class="catalog__grid">
+      <section class="catalog__filter filter">
+        <h2 class="visually-hidden">Фильтр</h2>
+
+        <form class="filter__form form" action="post">
+          <fieldset class="form__cost">
+            <legend class="form__cost-title">Цена за сутки, ₽</legend>
+            <input class="form__cost-value" type="text" placeholder="100">
+            <input class="form__cost-value" type="text" placeholder="600">
+          </fieldset>
+          <fieldset class="form__area">
+            <legend class="form__area-title">Площадь</legend>
+            <ul class="form__area-list">
+              <li>
+                <p>
+                  <input id="area1" type="checkbox" name="0.63" class="visually-hidden" checked>
+                  <label for="area1" class="form__area-label"><span>0,63 м2</span></label>
+                </p>
+              </li>
+              <li>
+                <p>
+                  <input id="area2" type="checkbox" name="0.90" class="visually-hidden" checked>
+                  <label for="area2" class="form__area-label"><span>0,90 м2</span></label>
+                </p>
+              </li>
+              <li>
+                <p>
+                  <input id="area3" type="checkbox" name="1.13" class="visually-hidden" checked>
+                  <label for="area3" class="form__area-label"><span>1,13 м2</span></label>
+                </p>
+              </li>
+              <li>
+                <p>
+                  <input id="area4" type="checkbox" name="1.56" class="visually-hidden" checked>
+                  <label for="area4" class="form__area-label"><span>1,56 м2</span></label>
+                </p>
+              </li>
+              <li>
+                <p>
+                  <input id="area5" type="checkbox" name="2.56" class="visually-hidden" checked>
+                  <label for="area5" class="form__area-label"><span>2,56 м2</span></label>
+                </p>
+              </li>
+              <li>
+                <p>
+                  <input id="area6" type="checkbox" name="2.88" class="visually-hidden" checked>
+                  <label for="area6" class="form__area-label"><span>2,88 м2</span></label>
+                </p>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="form__equipment">
+            <legend class="form__equipment-title">Оснащение номера</legend>
+            <ul class="form__equipment-list">
+              <li>
+                <p>
+                  <input id="equipment1" type="checkbox" name="Пустой номер" class="visually-hidden" checked>
+                  <label for="equipment1" class="form__equipment-label"><span>Пустой номер</span></label>
+                </p>
+              </li>
+              <li>
+                <p>
+                  <input id="equipment2" type="checkbox" name="Лежак" class="visually-hidden" checked>
+                  <label for="equipment2" class="form__equipment-label"><span>Лежак</span></label>
+                </p>
+              </li>
+              <li>
+                <p>
+                  <input id="equipment3" type="checkbox" name="Когтеточка" class="visually-hidden" checked>
+                  <label for="equipment3" class="form__equipment-label"><span>Когтеточка</span></label>
+                </p>
+              </li>
+              <li>
+                <p>
+                  <input id="equipment4" type="checkbox" name="Игровой-комплекс" class="visually-hidden" checked>
+                  <label for="equipment4" class="form__equipment-label"><span>Игровой-комплекс</span></label>
+                </p>
+              </li>
+              <li>
+                <p>
+                  <input id="equipment5" type="checkbox" name="Домик" class="visually-hidden" checked>
+                  <label for="equipment5" class="form__equipment-label"><span>Домик</span></label>
+                </p>
+              </li>
+            </ul>
+          </fieldset>
+        </form>
+      </section>
+
+      <section class="room-catalog">
+        <h2 class="visually-hidden">Номера</h2>
+
+        <div class="room-catalog__sort sort">
+          <button type="button">Фильтры</button>
+          <select name="sort">
+            <option value="">По площади</option>
+            <option value="">По площади</option>
+            <option value="">По цене</option>
+            <option value="">По цене</option>
+          </select>
+        </div>
+
+        <ul class="room-catalog__list">
+          <li>
+            <img src="img/room-1-mobile@1x.jpg" alt="">
+            <h3>Эконом</h3>
+            <ul>
+              <li>Размеры (ШхГхВ) - 90х70х180 см</li>
+              <li>Площадь - 0,63 м2</li>
+              <li>Оснащение номера
+                <ul>
+                  <li>Пустой номер</li>
+                </ul>
+              </li>
+              <li>Цена за сутки: <span>100₽</span></li>
+            </ul>
+            <a href="" class="button">Забронировать</a>
+          </li>
+          <li>
+            <img src="img/room-2-mobile@1x.jpg" alt="">
+            <h3>Эконом плюс</h3>
+            <ul>
+              <li>Размеры (ШхГхВ) - 90х100х180 см</li>
+              <li>Площадь - 0,90 м2</li>
+              <li>Оснащение номера
+                <ul>
+                  <li>Лежак</li>
+                  <li>Когтеточка</li>
+                </ul>
+              </li>
+              <li>Цена за сутки: <span>200₽</span></li>
+            </ul>
+            <a href="" class="button">Забронировать</a>
+          </li>
+          <li>
+            <img src="img/room-3-mobile@1x.jpg" alt="">
+            <h3>Комфорт</h3>
+            <ul>
+              <li>Размеры (ШхГхВ) - 100х125х180 см</li>
+              <li>Площадь - 1,13 м2</li>
+              <li>Оснащение номера
+                <ul>
+                  <li>Лежак</li>
+                  <li>Когтеточка</li>
+                  <li>Игровой комплекс</li>
+                </ul>
+              </li>
+              <li>Цена за сутки: <span>250₽</span></li>
+            </ul>
+            <a href="" class="button">Забронировать</a>
+          </li>
+          <li>
+            <img src="img/room-4-mobile@1x.jpg" alt="">
+            <h3>Сьют</h3>
+            <ul>
+              <li>Размеры (ШхГхВ) - 125х125х180 см</li>
+              <li>Площадь - 1,56 м2</li>
+              <li>Оснащение номера
+                <ul>
+                  <li>Лежак</li>
+                  <li>Когтеточка</li>
+                  <li>Игровой комплекс</li>
+                </ul>
+              </li>
+              <li>Цена за сутки: <span>350₽</span></li>
+            </ul>
+            <a href="" class="button">Забронировать</a>
+          </li>
+          <li>
+            <img src="img/room-5-mobile@1x.jpg" alt="">
+            <h3>Люкс</h3>
+            <ul>
+              <li>Размеры (ШхГхВ) - 160х160х180 см</li>
+              <li>Площадь - 2,56 м2</li>
+              <li>Оснащение номера
+                <ul>
+                  <li>Лежак</li>
+                  <li>Когтеточка</li>
+                  <li>Игровой комплекс</li>
+                  <li>Домик</li>
+                </ul>
+              </li>
+              <li>Цена за сутки: <span>500₽</span></li>
+            </ul>
+            <a href="" class="button">Забронировать</a>
+          </li>
+          <li>
+            <img src="img/room-6-mobile@1x.jpg" alt="">
+            <h3>Супер-Люкс</h3>
+            <ul>
+              <li>Размеры (ШхГхВ) - 180х160х180 см</li>
+              <li>Площадь - 2,88 м2</li>
+              <li>Оснащение номера
+                <ul>
+                  <li>Лежак</li>
+                  <li>Когтеточка</li>
+                  <li>Игровой комплекс</li>
+                  <li>Домик</li>
+                </ul>
+              </li>
+              <li>Цена за сутки: <span>600₽</span></li>
+            </ul>
+            <a href="" class="button">Забронировать</a>
+          </li>
+        </ul>
+      </section>
+    </div>
+
+    <div class="catalog__gift gift">
+      <h2 class="gift__title">Каждый 7-й день <span>бесплатно!</span></h2>
+      <p class="gift__text">Акция действует при размещении в номерах “Люкс” и “Супер-Люкс”</p>
+      <a href="" class="gift__button">Забронировать</a>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__top">
+      <a class="footer__logo logo">
+        <img src="img/logo.svg" width="46" height="38" alt="Логотип сайта КОТЕЙКА.">
+      </a>
+      <nav class="footer__nav nav">
+        <ul class="nav__list">
+          <li><a href="#advantages" class="nav__link">Почему мы?</a></li>
+          <li><a href="#rooms" class="nav__link">Номера</a></li>
+          <li><a href="#reviews" class="nav__link">Отзывы</a></li>
+          <li><a href="#contacts" class="nav__link">Контакты</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="footer__copy copyright">
+      <p class="copiright__text">2019 Все права защищены</p>
+      <p class="copiright__text">Политика конфиденциальности</p>
+    </div>
+  </footer>
+
+</body>
+
+</html>
