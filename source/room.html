@@ -49,59 +49,51 @@
     </div>
   </header>
 
-  <main class="index">
-    <h1 class="visually-hidden">Главная страница отеля "КОТЕЙКА".</h1>
+  <main class="room-page">
+    <h1 class="visually-hidden">Страница номера</h1>
 
-    <section class="promo">
-      <p class="promo__place">Санкт-Петербург</p>
-      <h2 class="promo__title">Котейка</h2>
-      <p class="promo__subtitle">Уютная гостиница для котов и кошек</p>
-      <a href="catalog.html" class="promo__button button">Забронировать</a>
-    </section>
+    <section class="room-page__room-details room-details">
+      <div class="room-details__gallery gallery">
+        <div class="gallery__image">
+          <img src="img/gallery-1-mobile@1x.jpg" width="290" height="288" alt="">
+        </div>
+        <ul class="gallery__thumbnails">
+          <li class="gallery__thumbnail">
+            <a href="">
+              <img src="img/little-room-1-mobile@1x.jpg" alt="">
+            </a>
+          </li>
+          <li class="gallery__thumbnail">
+            <a href="">
+              <img src="img/little-room-2-mobile@1x.jpg" alt="">
+            </a>
+          </li>
+          <li class="gallery__thumbnail">
+            <a href="">
+              <img src="img/little-room-3-mobile@1x.jpg" alt="">
+            </a>
+          </li>
+        </ul>
+      </div>
 
-    <section id="advantages" class="advantages">
-      <h2 class="advantages__title">Почему мы?</h2>
+      <div class="room-details__description">
+        <h2 class="room-details__title">Супер-Люкс</h2>
 
-      <ul class="advantages__list">
-        <li class="advantages__item advantage">
-          <h3 class="advantage__title">Комфортная температура</h3>
-          <p class="advantage__text">
-            Во всех номерах поддерживается комфортная температура в пределах 23 - 25 градусов. В каждом номере можно
-            дополнительно отрегулировать температуру.
-          </p>
-        </li>
-        <li class="advantages__item advantage">
-          <h3 class="advantage__title">Видеонаблюдение</h3>
-          <p class="advantage__text">
-            Мы предоставляем доступ в нашу систему. Вы сможете следить за своим питомцем со своего смартфона или
-            компьютера.
-          </p>
-        </li>
-        <li class="advantages__item advantage">
-          <h3 class="advantage__title">Услуги Зоотакси</h3>
-          <p class="advantage__text">
-            Мы приедем за вашим питомцем в любой район Санкт-Петербурга.
-          </p>
-        </li>
-        <li class="advantages__item advantage">
-          <h3 class="advantage__title">Сбалансированное питание</h3>
-          <p class="advantage__text">
-            Вы можете привезти свой корм или доверить рацион своего питомца нашим профессионалам.
-          </p>
-        </li>
-        <li class="advantages__item advantage">
-          <h3 class="advantage__title">Ежедневные прогулки</h3>
-          <p class="advantage__text">
-            По вашему желанию мы выгуливаем вашего питомца два раза в день на специализированной закрытой территории.
-          </p>
-        </li>
-        <li class="advantages__item advantage">
-          <h3 class="advantage__title">Лучшие ветеринары</h3>
-          <p class="advantage__text">
-            В гостинице 24 часа дежурит ветеринарный врач, который окажет любую помощь в случае необходимости.
-          </p>
-        </li>
-      </ul>
+        <ul class="room-details__options">
+          <li class="room-details__option">Размеры (ШхГхВ) - 180х160х180 см</li>
+          <li class="room-details__option">Площадь - 2,88 м2</li>
+          <li class="room-details__option">Оснащение номера
+            <ul class="room-details__equipments">
+              <li class="room-details__equipment">Лежак</li>
+              <li class="room-details__equipment">Домик</li>
+              <li class="room-details__equipment">Игровой комплекс - 3 яруса</li>
+              <li class="room-details__equipment">Когтеточка</li>
+            </ul>
+          </li>
+          <li class="room-details__option">Цена за сутки: <span>600₽</span></li>
+        </ul>
+        <a href="" class="button">Забронировать</a>
+      </div>
     </section>
 
     <section id="rooms" class="rooms">
@@ -145,39 +137,6 @@
           <label for="rooms-first"></label>
           <label for="rooms-second"></label>
           <label for="rooms-third"></label>
-        </div>
-      </div>
-    </section>
-
-    <section id="reviews" class="reviews">
-      <h2 class="reviews__title">Отзывы</h2>
-
-      <div class="reviews__slider slider">
-        <input id="reviews-first" name="slider-control" type="radio" class="visually-hidden" checked>
-        <input id="reviews-second" name="slider-control" type="radio" class="visually-hidden">
-        <input id="reviews-third" name="slider-control" type="radio" class="visually-hidden">
-        <div class="slider__item review">
-          <p class="review__text">
-            Первый раз пришлось оставить нашего котика в гостинице, очень переживали. Администратор Мария каждый день
-            высылала нам фото нашего питомца, рассказывала, как он себя чувствует. И мы и котик остались очень довольны!
-          </p>
-        </div>
-        <div class="slider__item review">
-          <p class="review__text">
-            Гостиницу для питомцев нам посоветовали друзья. Они всегда оставляют здесь своего кота, когда уезжают. В
-            “Котейке” очень хорошо заботятся о питомцах, в гостинице очень чисто. Всем рекомендую! Будем обращаться еще.
-          </p>
-        </div>
-        <div class="slider__item review">
-          <p class="review__text">
-            Мой кот — настоящая привереда, угодить ему сложно. У меня были особые требования к уходу за ним, и “Котейка”
-            отлично справились. Я часто наблюдал по видео за питомцем со своего телефона, это очень удобно.
-          </p>
-        </div>
-        <div class="slider__controls">
-          <label for="reviews-first"></label>
-          <label for="reviews-second"></label>
-          <label for="reviews-third"></label>
         </div>
       </div>
     </section>
