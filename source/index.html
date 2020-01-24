@@ -111,35 +111,38 @@
         <input id="rooms-first" name="slider-control" type="radio" class="visually-hidden" checked>
         <input id="rooms-second" name="slider-control" type="radio" class="visually-hidden">
         <input id="rooms-third" name="slider-control" type="radio" class="visually-hidden">
-        <div class="slider__item room">
-          <img class="room__image" src="img/cat-slide-1-mobile@1x.jpg" width="290" height="192" alt="Фото номера.">
-          <h3 class="room__title">Эконом плюс</h3>
-          <ul class="room__params">
-            <li class="room__params-item">Площадь - 0,90 м2</li>
-            <li class="room__params-item">Размеры (ШхГхВ) 90х100х180 см</li>
-            <li class="room__params-item">Цена за сутки: 200₽</li>
+        <div class="slider__item slider-room">
+          <img class="slider-room__image" src="img/cat-slide-1-mobile@1x.jpg" width="290" height="192"
+            alt="Фото номера.">
+          <h3 class="slider-room__title">Эконом плюс</h3>
+          <ul class="slider-room__params">
+            <li class="slider-room__params-item">Площадь - 0,90 м2</li>
+            <li class="slider-room__params-item">Размеры (ШхГхВ) 90х100х180 см</li>
+            <li class="slider-room__params-item">Цена за сутки: 200₽</li>
           </ul>
-          <a href="" class="room__button button">Забронировать</a>
+          <a href="" class="slider-room__button button">Забронировать</a>
         </div>
-        <div class="slider__item room">
-          <img class="room__image" src="img/cat-slide-2-mobile@1x.jpg" width="290" height="192" alt="Фото номера.">
-          <h3 class="room__title">Комфорт</h3>
-          <ul class="room__params">
-            <li class="room__params-item">Площадь - 1,13 м2</li>
-            <li class="room__params-item">Размеры (ШхГхВ) 100х125х180 см</li>
-            <li class="room__params-item">Цена за сутки: 250₽</li>
+        <div class="slider__item slider-room">
+          <img class="slider-room__image" src="img/cat-slide-2-mobile@1x.jpg" width="290" height="192"
+            alt="Фото номера.">
+          <h3 class="slider-room__title">Комфорт</h3>
+          <ul class="slider-room__params">
+            <li class="slider-room__params-item">Площадь - 1,13 м2</li>
+            <li class="slider-room__params-item">Размеры (ШхГхВ) 100х125х180 см</li>
+            <li class="slider-room__params-item">Цена за сутки: 250₽</li>
           </ul>
-          <a href="" class="room__button button">Забронировать</a>
+          <a href="" class="slider-room__button button">Забронировать</a>
         </div>
-        <div class="slider__item room">
-          <img class="room__image" src="img/cat-slide-3-mobile@1x.jpg" width="290" height="192" alt="Фото номера.">
-          <h3 class="room__title">Сьют</h3>
-          <ul class="room__params">
-            <li class="room__params-item">Площадь - 1,56 м2</li>
-            <li class="room__params-item">Размеры (ШхГхВ) 125х125х180 см</li>
-            <li class="room__params-item">Цена за сутки: 350₽</li>
+        <div class="slider__item slider-room">
+          <img class="slider-room__image" src="img/cat-slide-3-mobile@1x.jpg" width="290" height="192"
+            alt="Фото номера.">
+          <h3 class="slider-room__title">Сьют</h3>
+          <ul class="slider-room__params">
+            <li class="slider-room__params-item">Площадь - 1,56 м2</li>
+            <li class="slider-room__params-item">Размеры (ШхГхВ) 125х125х180 см</li>
+            <li class="slider-room__params-item">Цена за сутки: 350₽</li>
           </ul>
-          <a href="" class="room__button button">Забронировать</a>
+          <a href="" class="slider-room__button button">Забронировать</a>
         </div>
         <div class="slider__controls">
           <label for="rooms-first"></label>
@@ -254,6 +257,48 @@
       <p class="copiright__text">Политика конфиденциальности</p>
     </div>
   </footer>
+
+  <div class="order-room">
+    <h2 class="order-room__title">Забронировать номер</h2>
+
+    <form action="post">
+      <fieldset class="order-room__info">
+        <ul class="order-room__info-list">
+          <li><label><span class="visually-hidden">Ваше имя </span><input class="order-room__info-field" type="text"
+                placeholder="Ваше имя"></label></li>
+          <li><label><span class="visually-hidden">Имя Питомца </span><input class="order-room__info-field" type="text"
+                placeholder="Имя Питомца"></label></li>
+          <li><label><span class="visually-hidden">Телефон </span><input class="order-room__info-field" type="tel"
+                placeholder="Телефон"></label></li>
+          <li><label><span class="visually-hidden">E-mail </span><input class="order-room__info-field" type="email"
+                placeholder="E-mail"></label></li>
+        </ul>
+      </fieldset>
+      <fieldset class="order-room__date">
+        <span class="order-room__date-title">Дата заезда</span>
+        <p class="order-room__date-fields">
+          <label><span>с </span><input type="date" value="2020-01-26"></label>
+          <label><span>по </span><input type="date" value="2020-02-26"></label>
+        </p>
+      </fieldset>
+      <button class="order-room__button button" type="submit">Отправить заявку</button>
+    </form>
+
+    <button id="close-order" type="button">
+      <span class="visually-hidden">Закрыть окно</span>
+    </button>
+  </div>
+
+  <div class="message">
+    <h2 class="message__title">Спасибо за заявку!</h2>
+
+    <p class="message__text">Мы свяжемся с вами в ближайшее время</p>
+    <button class="message__button button" type="button">Ок</button>
+
+    <button id="close-msg" type="button">
+      <span class="visually-hidden">Закрыть окно</span>
+    </button>
+  </div>
 
 </body>
 
